@@ -1,0 +1,231 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    // height: 2200px;
+    background-color: #f2f4f7;
+}
+// 約束，當屏幕大於750px,強制讓html字體大小不再變化
+@media screen and (min-width: 750px){
+    html{
+        font-size: 37.5px!important;
+    }
+}
+a{
+  text-decoration: none;
+}
+section{
+    background-color: #fff;
+    margin-bottom: .266667rem;
+    padding: 1.066667rem 0
+}
+/* 頭部區域 */
+.header{
+    height: 2.133333rem;
+    border-bottom: solid 1px #eaeaea;
+    line-height: 2.133333rem;
+    text-align: center;
+    font-size: .933333rem;
+    color: #1c1c1c;
+}
+/* 導航欄 */
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+    margin: .8rem 0 .453333rem 0;
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+        .nav-items{
+        width: 3.466667rem;
+        height: 5.066667rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        span{
+        font-size: .666667rem;
+        color: #707070;
+        }   
+        img{
+        width: 2.933333rem;
+        height: 2.88rem;
+        }
+        }
+    }
+}
+/* banner */
+.banner{
+    width: 20rem;
+    height: 4.053333rem;
+    img{
+    width: 100%;
+    height: 100%;
+    }
+}
+// 就業指導
+// 充電學習
+.content{
+    padding: 0 .586667rem;
+    .content-hd{
+    display: flex;
+    position: relative;
+    height: 1.013333rem;
+    margin-bottom: .906667rem;
+    justify-content: space-between;
+    padding-left: 1.333333rem;
+        img{
+        position: absolute;
+        top: -0.08rem;
+        left: 0;
+        width: 1.013333rem;
+        height: 1.013333rem;
+        }
+        span{
+            font-size: .746667rem;
+        font-weight: 700;
+        }
+        .more{
+        font-size: .586667rem;
+        color: #999999;
+        }
+    }
+}
+// 4. 複製輪播圖的樣式代碼
+.get_job_focus{
+    position: relative;
+    .swiper-container {
+      width: 14.4rem;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: .666667rem;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+	  transition: 300ms;
+    //   非中間圖片大小
+	  transform: scale(0.8);
+      opacity: .4;
+      a{
+          width: 9.013333rem;
+          height: 10.026667rem;
+          img{
+              width: 100%;
+              height: 100%;
+              
+          };
+        }
+      p{    
+          width: 9.013333rem;
+          margin-top: .64rem;
+          white-space: nowrap;
+          color: #333;
+        };  
+    }
+	.swiper-slide-active,.swiper-slide-duplicate-active{
+        // 中間圖片的大小
+      transform: scale(1);
+      z-index: 1;
+      opacity: 1;
+	}
+    div[class^="swiper-button"]{
+        outline: none;
+        &::after{
+            font-size: 1.0666667rem;
+            color: #000;
+        }
+    }
+}
+// 學習模塊輪播圖
+.study{
+    .swiper {
+        padding: .133333rem;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        width: 7.733333rem;
+        height: 9.066667rem;
+        background: #fff;
+        border-radius: .266667rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        a{
+            width: 100%;
+            height: 100%;
+            img{
+                margin: 0 auto;
+                width: 7.253333rem;
+                height: 4.56rem;
+            }
+            p{
+                width: 7.253333rem;
+                margin: .533333rem 0;
+                padding-left: .4rem;
+                font-size: .586667rem;
+                color: #3a3e46;
+            }
+            .num{
+                font-size: .533333rem;
+            }
+            .num_red{
+                margin-left: .613333rem;
+                color: red;
+                font-size: .586667rem;
+            }
+        }
+    }
+}
+// 底部區域
+.footer{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2.933333rem;
+    z-index: 1;
+    border-top: .026667rem solid #e2e2e2;
+    background-color: #fff;
+    .itmes{
+        width: 3.2rem;
+        height: 2.133333rem;
+        a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 1.04rem;
+                height: 1.093333rem;
+                margin-bottom: .293333rem
+            }
+            span{
+                font-size: .586667rem;
+                color: #666666;
+            }
+            .home{
+                color: #78d7d9;
+            }
+        }
+    }  
+}

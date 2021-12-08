@@ -1,0 +1,219 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+section {
+  background-color: #fff;
+  margin-bottom: 0.266667rem;
+  padding: 1.066667rem 0;
+}
+/* 頭部區域 */
+.header {
+  height: 2.133333rem;
+  border-bottom: solid 1px #eaeaea;
+  line-height: 2.133333rem;
+  text-align: center;
+  font-size: 0.933333rem;
+  color: #1c1c1c;
+}
+/* 導航欄 */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav li {
+  margin: 0.8rem 0 0.453333rem 0;
+  flex: 33%;
+  display: flex;
+  justify-content: center;
+}
+.nav li .nav-items {
+  width: 3.466667rem;
+  height: 5.066667rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav li .nav-items span {
+  font-size: 0.666667rem;
+  color: #707070;
+}
+.nav li .nav-items img {
+  width: 2.933333rem;
+  height: 2.88rem;
+}
+/* banner */
+.banner {
+  width: 20rem;
+  height: 4.053333rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  padding: 0 0.586667rem;
+}
+.content .content-hd {
+  display: flex;
+  position: relative;
+  height: 1.013333rem;
+  margin-bottom: 0.906667rem;
+  justify-content: space-between;
+  padding-left: 1.333333rem;
+}
+.content .content-hd img {
+  position: absolute;
+  top: -0.08rem;
+  left: 0;
+  width: 1.013333rem;
+  height: 1.013333rem;
+}
+.content .content-hd span {
+  font-size: 0.746667rem;
+  font-weight: 700;
+}
+.content .content-hd .more {
+  font-size: 0.586667rem;
+  color: #999999;
+}
+.get_job_focus {
+  position: relative;
+}
+.get_job_focus .swiper-container {
+  width: 14.4rem;
+  height: 100%;
+}
+.get_job_focus .swiper-slide {
+  text-align: center;
+  font-size: 0.666667rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.4;
+}
+.get_job_focus .swiper-slide a {
+  width: 9.013333rem;
+  height: 10.026667rem;
+}
+.get_job_focus .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.get_job_focus .swiper-slide p {
+  width: 9.013333rem;
+  margin-top: 0.64rem;
+  white-space: nowrap;
+  color: #333;
+}
+.get_job_focus .swiper-slide-active,
+.get_job_focus .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 1;
+  opacity: 1;
+}
+.get_job_focus div[class^="swiper-button"] {
+  outline: none;
+}
+.get_job_focus div[class^="swiper-button"]::after {
+  font-size: 1.0666667rem;
+  color: #000;
+}
+.study .swiper {
+  padding: 0.133333rem;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.study .swiper-slide {
+  width: 7.733333rem;
+  height: 9.066667rem;
+  background: #fff;
+  border-radius: 0.266667rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.study .swiper-slide a {
+  width: 100%;
+  height: 100%;
+}
+.study .swiper-slide a img {
+  margin: 0 auto;
+  width: 7.253333rem;
+  height: 4.56rem;
+}
+.study .swiper-slide a p {
+  width: 7.253333rem;
+  margin: 0.533333rem 0;
+  padding-left: 0.4rem;
+  font-size: 0.586667rem;
+  color: #3a3e46;
+}
+.study .swiper-slide a .num {
+  font-size: 0.533333rem;
+}
+.study .swiper-slide a .num_red {
+  margin-left: 0.613333rem;
+  color: red;
+  font-size: 0.586667rem;
+}
+.footer {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.933333rem;
+  z-index: 1;
+  border-top: 0.026667rem solid #e2e2e2;
+  background-color: #fff;
+}
+.footer .itmes {
+  width: 3.2rem;
+  height: 2.133333rem;
+}
+.footer .itmes a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .itmes a img {
+  width: 1.04rem;
+  height: 1.093333rem;
+  margin-bottom: 0.293333rem;
+}
+.footer .itmes a span {
+  font-size: 0.586667rem;
+  color: #666666;
+}
+.footer .itmes a .home {
+  color: #78d7d9;
+}
